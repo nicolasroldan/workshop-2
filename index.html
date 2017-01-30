@@ -17,37 +17,43 @@
  <body>
 
   <header>
-    <div class="cabecera">
-      <div class="form">
+    <div class="container cabecera">
+      <div class="col-md-4 form">
         <span class="ion-search busqueda"></span>
         <form action="">
           <input type="text" placeholder="Search">
         </form>
       </div>
-      <div>
+      <div class="col-md-4 logo">
         <span>
           <img src="assets/logo.png" alt="">
         </span>
       </div>
-      <span>
-        <span class="ion-bag"></span>
-        <a href="">Items</a>
-        <button>CAD</button>
-      </span>
+      <div class="col-md-4">
+        <div class="items">
+          <span class="ion-bag"></span>
+          <a href="#" class="text-uppercase">Items</a>
+          <button>CAD</button>
+        </div>
+      </div>
     </div>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-
-          
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
             
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
@@ -61,11 +67,11 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Theme Features</a></li>
+            <li><a href="#">Account</a></li>
           </ul>
-         
+
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -75,37 +81,38 @@
   <section class="section-1">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <nav>
-            <h6>SHOP</h6>
+        <div class="col-md-2">
+          <nav class="navegador">
             <ul>
+              <h6>SHOP</h6>
+            
               <li>
-                Men
+                <a href="#" class="titulo">Men ></a>
                 <ul>
-                  <li>Classics</li>
-                  <li>New arrivals</li>
-                  <li>Legacy line</li>
-                  <li>Sunwear</li>
+                  <li><a href="#"> Classics</a></li>
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Legacy line</a></li>
+                  <li><a href="#">Sunwear</a></li>
                 </ul>
               </li>
-              <li>Women
+              <li><a href="#" class="titulo">Women ></a>
                 <ul>
-                  <li>Classics</li>
-                  <li>New arrivals</li>
-                  <li>Legacy line</li>
-                  <li>Sunwear</li>
+                  <li><a href="#">Classics</a></li>
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Legacy line</a></li>
+                  <li><a href="#">Sunwear</a></li>
                 </ul>
               </li>
               <li>
-                Lookbok
+                <a href="#"><strong>Lookbok</strong></a>
                 <ul>
-                  <li>FW 2014</li>
+                  <li><a href="#">FW 2014</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -119,25 +126,25 @@
               <div class="item active">
                 <img src="assets/0.jpg" alt="">
                 <div class="carousel-caption carrusel">
-                  <h3 class="text-left">Bold & beautiful</h3>
-                  <h1 class="text-left">Autumn Styles</h1>
-                  <h3 class="text-left">By faraday eyewear</h3>
+                  <h3 class="text-left text-uppercase">Bold & beautiful</h3>
+                  <h1 class="text-left"><strong>Autumn Styles</strong></h1>
+                  <h3 class="text-left text-uppercase">By faraday eyewear</h3>
                 </div>
               </div>
               <div class="item">
                 <img src="assets/0.jpg" alt="">
                 <div class="carousel-caption carrusel">
-                  <h3 class="text-left">Bold & beautiful</h3>
-                  <h1 class="text-left">Autumn Styles</h1>
-                  <h3 class="text-left">By faraday eyewear</h3>
+                  <h3 class="text-left text-uppercase">Bold & beautiful</h3>
+                  <h1 class="text-left"><strong>Autumn Styles</strong></h1>
+                  <h3 class="text-left text-uppercase">By faraday eyewear</h3>
                 </div>
               </div>
               <div class="item">
                 <img src="assets/0.jpg" alt="">
                 <div class="carousel-caption carrusel">
-                  <h3 class="text-left">Bold & beautiful</h3>
-                  <h1 class="text-left">Autumn Styles</h1>
-                  <h3 class="text-left">By faraday eyewear</h3>
+                  <h3 class="text-left text-uppercase">Bold & beautiful</h3>
+                  <h1 class="text-left"><strong>Autumn Styles</strong></h1>
+                  <h3 class="text-left text-uppercase">By faraday eyewear</h3>
                 </div>
               </div>
             </div>
@@ -155,45 +162,49 @@
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
+        <div class="col-md-offset-2 col-md-10">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 relativo">
               <img class="img-responsive" src="assets/home-feature-4.png" alt="">
-              <h4>Classics</h4>
-              <p>Shop now</p>
+              <div class="classic">
+                <h4>Classics</h4>
+                <p class="text-uppercase">Shop now</p>
+              </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 relativo">
               <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <h4>Popular</h4>
-              <p>Shop now</p>
+              <div class="classic">
+                <h4>Popular</h4>
+                <p class="text-uppercase">Shop now</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
+        <div class="col-md-offset-2 col-md-10">
           <div class="row">
-            <h5>Featured Products</h5>
-            <div class="col-md-3 text-center">
+            <h5 class="titulogris">Featured Products</h5>
+            <div class="col-md-3 text-center anteojos">
               <img class="img-responsive" src="assets/2.jpg" alt="">
               <a class="text-uppercase" href="#">Warby parker</a>
               <h5>Clara</h5>
               <p>$235.00 CAD</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 text-center anteojos">
               <img class="img-responsive" src="assets/3.jpg" alt="">
               <a class="text-uppercase" href="#">Warby parker</a>
               <h5>Edgeworth</h5>
               <p>$235.00 CAD</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 text-center anteojos">
               <img class="img-responsive" src="assets/4.jpg" alt="">
               <a class="text-uppercase" href="#">Warby parker</a>
               <h5>Kidd</h5>
               <p>$235.00 CAD</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 text-center anteojos">
               <img class="img-responsive" src="assets/5.jpg" alt="">
               <a class="text-uppercase" href="#">Warby parker</a>
               <h5>Laurel</h5>
@@ -204,11 +215,11 @@
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
+        <div class="col-md-offset-2 col-md-10">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 faraday">
               <h4>Welcome To Faraday Eyewear</h4>
-              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum solor sit amet, cosectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur bland it tempus porttitor.</p>
+              <p> Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum solor sit amet, cosectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur bland it tempus porttitor.</p>
             </div>
             <div class="col-md-6">
               <img class="img-responsive" src="assets/1.png" alt="">
@@ -218,7 +229,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
+        <div class="col-md-offset-2 col-md-10">
           <div class="row">
             <div class="col-md-12 relativo">
               <img class="img-responsive" src="assets/6.png" alt="">
@@ -233,25 +244,25 @@
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
+        <div class="col-md-offset-2 col-md-10">
           <div class="row">
-            <h5 class="text-uppercase text-center">News</h5>
-            <div class="col-md-4">
+            <h5 class="text-uppercase text-center titulogris">News</h5>
+            <div class="col-md-4 news">
               <h4>Behind the scenes</h4>
-              <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin ipsum interdum ante auismod egestas. Vivamos ullamcorper felis sit amet aliquam ullamcorper. Phasellus dapibus ultricies mi, eget convallis arcu alementum et. Suspendisse suscipit dapibus arcu, vitae scelerisque mi faucibus nec. Praesent gravida at neque et convallis. Nam et turpis ultrices, porta urna at, fringilla orci.</p>
+              <img class="img-responsive" src="assets/img-1.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin ipsum interdum ante auismod egestas. Vivamos ullamcorper felis sit amet aliquam ullamcorper. Phasellus dapibus ultricies mi, eget convallis arcu alementum et. Suspendisse suscipit dapibus arcu, vitae scelerisque mi faucibus nec. Praesent gravida at neque et convallis. Nam et turpis ultrices, porta urna at, fringilla orci.</p>
               <a href="">Read more</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 news">
               <h4>Celebrating 25 Years</h4>
-              <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin ipsum interdum ante auismod egestas. Vivamos ullamcorper felis sit amet aliquam ullamcorper. Phasellus dapibus ultricies mi, eget convallis arcu alementum et. Suspendisse suscipit dapibus arcu, vitae scelerisque mi faucibus nec. Praesent gravida at neque et convallis. Nam et turpis ultrices, porta urna at, fringilla orci.</p>
+              <img class="img-responsive" src="assets/img-2.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin ipsum interdum ante auismod egestas. Vivamos ullamcorper felis sit amet aliquam ullamcorper. Phasellus dapibus ultricies mi, eget convallis arcu alementum et. Suspendisse suscipit dapibus arcu, vitae scelerisque mi faucibus nec. Praesent gravida at neque et convallis. Nam et turpis ultrices, porta urna at, fringilla orci.</p>
               <a href="">Read more</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 news">
               <h4>Winter Reading List</h4>
-              <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin ipsum interdum ante auismod egestas. Vivamos ullamcorper felis sit amet aliquam ullamcorper. Phasellus dapibus ultricies mi, eget convallis arcu alementum et. Suspendisse suscipit dapibus arcu, vitae scelerisque mi faucibus nec. Praesent gravida at neque et convallis. Nam et turpis ultrices, porta urna at, fringilla orci.</p>
+              <img class="img-responsive" src="assets/img-3.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin ipsum interdum ante auismod egestas. Vivamos ullamcorper felis sit amet aliquam ullamcorper. Phasellus dapibus ultricies mi, eget convallis arcu alementum et. Suspendisse suscipit dapibus arcu, vitae scelerisque mi faucibus nec. Praesent gravida at neque et convallis. Nam et turpis ultrices, porta urna at, fringilla orci.</p>
               <a href="">Read more</a>
             </div>
           </div>
@@ -259,43 +270,54 @@
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
+        <div class="col-md-offset-2 col-md-10">
           <div class="row">
-            <h5>Featured collections</h5>
-            <div class="col-md-4">
-              <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <p>Lookbok</p>
+            <h5 class="titulogris">Featured collections</h5>
+            <div class="col-md-4 relativo">
+              <img class="img-responsive" src="assets/img-1.png" alt="">
+              <div class="featured">
+                <p>Lookbook</p>
+              </div>
             </div>
-            <div class="col-md-4">
-              <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <p>Legacy Line</p>
+            <div class="col-md-4 relativo">
+              <img class="img-responsive" src="assets/img-2.png" alt="">
+              <div class="featured">
+                <p>Legacy Line</p>
+              </div>
             </div>
-            <div class="col-md-4">
-              <img class="img-responsive" src="assets/home-feature-5.png" alt="">
-              <p>Sunwear</p>
+            <div class="col-md-4 relativo">
+              <img class="img-responsive" src="assets/img-3.png" alt="">
+              <div class="featured">
+                <p>Sunwear</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-offset-3 col-md-9">
-          <div class="row">
-            <h5>News</h5>
-            <div class="col-md-4 cuadrado">
-              <p>Frame special</p>
-              <p>2 for 1</p>
-              <p>Limited time</p>
+        <div class="col-md-offset-2 col-md-10">
+          <div class="row flex">
+            <div class="col-md-4 cuadrado uno">
+              <div class="interno">
+               <p>Frame special</p>
+               <p class="grande">2 for 1</p>
+               <p>Limited time</p>
+              </div>
             </div>
-            <div class="col-md-4 cuadrado">
-              <p>Exclusive</p>
-              <p>Nikon Lenses</p>
-              <p>Now available</p>
+            <div class="col-md-4 cuadrado dos">
+              <div class="interno">
+                <p>Exclusive</p>
+                <p class="grande">Nikon Lenses</p>
+                <p>Now available</p>
+              </div>
             </div>
-            <div class="col-md-4 cuadrado">
-              <p>Our Acclaimed</p>
-              <p>Support</p>
-              <p>Team is standing by</p>
+            <div class="col-md-4 cuadrado tres">
+              <div class="interno">
+                <p>Our Acclaimed</p>
+                <p class="grande">Support</p>
+                <p>Team is standing by</p>
+              </div>
             </div>
           </div>
         </div>
@@ -305,10 +327,10 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 navigate">
           <nav>
-            <h4>Navigate</h4>
             <ul>
+              <h4>Navigate</h4>            
               <li>Home</li>
               <li>Products</li>
               <li>Blog</li>
@@ -317,10 +339,10 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 navigate">
           <nav>
-            <h4>Support</h4>
             <ul>
+              <h4>Support</h4>
               <li>Customer Service</li>
               <li>FAQ</li>
               <li>Free Shipping</li>
@@ -329,20 +351,21 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 navigate">
           <h4>Twitter</h4>
           <a class="twitter-timeline" data-height="270" data-dnt="true" href="https://twitter.com/pixelunion" data-tweet-limit="1">Tweets by pixelunion</a> 
           <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 navigate">
           <div>
             <h4>Newsletter</h4>
             <form action="">
-              <input type="email">
+              <input type="email" placeholder="your@email.com">
+              <span class="ion-ios-email-outline"></span>
           </form>
           </div>
 
-          <div>
+          <div class="social">
             <h4>Connect With Us</h4>
             <ul class="d-inline-block">
               <li><span class="ion-social-facebook"></span></li>
@@ -352,6 +375,11 @@
               <li><span class="ion-ios-email-outline"></span></li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-md-12">
+          <p>Copyright © 2015 Faraday</p>
         </div>
       </div>
     </div>
