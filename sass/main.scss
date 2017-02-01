@@ -198,6 +198,7 @@ section.section-1{
 				a{
 					color: #69a9c4;
 					letter-spacing: 1px;
+					text-decoration: none;
 				}
 				img{
 					margin-bottom: 20px;
@@ -235,6 +236,7 @@ section.section-1{
 					letter-spacing: 1px;
 					font-size: 15px;
 					color: #69a9c4;
+					text-decoration: none;
 				}
 
 				p{
@@ -309,7 +311,10 @@ footer{
 						margin-bottom: 15px;
 						font-family: 'Open Sans', sans-serif;
 						font-size: 12px;
-						color: 3d3d3d;
+						a{
+							color: #3d3d3d;
+							text-decoration: none;
+						}
 					}
 				}
 				div form input{
@@ -317,6 +322,10 @@ footer{
 					border-radius: 3px;
 					width: 90%;
 					padding: 10px 0 10px 15px;
+				}
+
+				span{
+					font-size: 25px;
 				}
 			}
 
